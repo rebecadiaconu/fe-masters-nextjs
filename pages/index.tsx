@@ -66,6 +66,6 @@ const Home = () => {
       </footer>
     </div>
   )
-};
+}
 
-export default Home;
+export default Home
