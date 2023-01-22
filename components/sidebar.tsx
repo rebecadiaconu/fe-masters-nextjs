@@ -79,7 +79,7 @@ const SideBar = () => {
         <Box width="120px" marginBottom="20px" paddingX="20px">
           <NextImage src="/logo.svg" height={60} width={120} />
         </Box>
-        <Box marginBottom="20px">
+        <Box>
           <List spacing={2}>
             {navMenu.map((menu) => (
               <MenuItem menuItem={menu} />
@@ -94,8 +94,8 @@ const SideBar = () => {
           </List>
         </Box>
         <Divider color="gray.800" />
-        <Box height="63%" overflowY="auto" paddingY="20px">
-          <List spacing={2}>
+        <Box height="calc(66% - 20px)" overflowY="auto" paddingY="20px">
+          <List spacing={2} sx={{ height: '100%' }}>
             {playlists.map((playlist) => (
               <ListItem paddingX="20px" key={playlist}>
                 <LinkBox>
