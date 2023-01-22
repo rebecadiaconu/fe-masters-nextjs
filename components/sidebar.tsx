@@ -53,7 +53,7 @@ const playlists = new Array(30).fill(1).map((_item, i) => `Playlist ${i + 1}`)
 
 const MenuItem = ({ menuItem }) => {
   return (
-    <ListItem paddingX="20px" fontSize="16px" key={menuItem.name}>
+    <ListItem paddingX="20px" fontSize="16px">
       <LinkBox>
         <NextLink href={menuItem.route} passHref>
           <LinkOverlay>
@@ -82,14 +82,14 @@ const SideBar = () => {
         <Box>
           <List spacing={2}>
             {navMenu.map((menu) => (
-              <MenuItem menuItem={menu} />
+              <MenuItem menuItem={menu} key={menu.name} />
             ))}
           </List>
         </Box>
         <Box marginY="20px">
           <List spacing={2}>
             {musicMenu.map((menu) => (
-              <MenuItem menuItem={menu} />
+              <MenuItem menuItem={menu} key={menu.name} />
             ))}
           </List>
         </Box>
