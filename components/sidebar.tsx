@@ -95,7 +95,7 @@ const SideBar = () => {
         </Box>
         <Divider color="gray.800" />
         <Box height="calc(66% - 20px)" overflowY="auto" paddingY="20px">
-          <List spacing={2} sx={{ height: '100%' }}>
+          <List spacing={1} sx={{ height: '100%' }}>
             {playlists.map((playlist) => (
               <ListItem paddingX="20px" key={playlist}>
                 <LinkBox>
