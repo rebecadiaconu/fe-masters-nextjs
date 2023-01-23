@@ -79,7 +79,9 @@ const SideBar = () => {
     >
       <Box paddingY="20px" height="100%">
         <Box width="120px" marginBottom="20px" paddingX="20px">
-          <NextImage src="/logo.svg" height={60} width={120} />
+          <NextLink href="/" passHref>
+            <NextImage src="/logo.svg" height={60} width={120} />
+          </NextLink>
         </Box>
         <Box>
           <List spacing={2}>
