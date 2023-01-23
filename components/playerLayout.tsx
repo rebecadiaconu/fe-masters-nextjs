@@ -25,16 +25,13 @@ const PlayerLayout = ({ children }) => {
           marginBottom: 100,
         }}
       >
-        {children}
+        <Box height="calc(100vh - 100px)">{children}</Box>
       </Box>
       <Box
         sx={{
           position: 'absolute',
           left: 0,
           bottom: 0,
-          borderColor: 'green',
-          borderWidth: 1,
-          borderStyle: 'solid',
         }}
       >
         playbar
