@@ -6,5 +6,11 @@ export const fetcher = (url: string, data: any = undefined) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
+  }).then((res) => {
+    if (res.status > 299 && res.status < 200) {
+      throw new Error()
+    }
+
+    return res.json()
   })
 }

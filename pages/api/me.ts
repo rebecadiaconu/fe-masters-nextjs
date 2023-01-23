@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { validatesRoute } from '../../lib/auth'
+import { validateRoute } from '../../lib/auth'
 
-export default validatesRoute(
+export default validateRoute(
   (req: NextApiRequest, res: NextApiResponse, user) => {
     res.json(user)
   }
