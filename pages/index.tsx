@@ -35,7 +35,7 @@ const Home = ({ artists }) => {
                 width="100%"
               >
                 <Image
-                  src="http://placekitten.com/300/300"
+                  src="https://placekitten.com/300/300"
                   borderRadius="100%"
                 />
                 <Box marginTop="20px">
