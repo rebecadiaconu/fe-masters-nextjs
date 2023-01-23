@@ -31,6 +31,8 @@ const run = async () => {
     create: {
       email: 'user@test.com',
       password: hashSync('password', salt),
+      firstName: 'Rebeca',
+      lastName: 'Diaconu',
     },
   })
 
