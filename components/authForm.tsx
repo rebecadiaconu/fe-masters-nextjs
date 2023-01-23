@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 // import { auth } from "../lib/mutations";
 import React, { useState } from 'react'
 import NextImage from 'next/image'
-import { AuthMode } from '../lib/EndpointsModels'
+import { AuthMode } from '../lib/models'
 import { auth } from '../lib/mutations'
 
 interface AuthFormProps {

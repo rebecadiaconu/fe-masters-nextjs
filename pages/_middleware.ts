@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { AuthMode } from '../lib/EndpointsModels'
+import { AuthMode } from '../lib/models'
 
 const signedinPages = ['/', '/playlist', '/library']
 

@@ -1,4 +1,4 @@
-import { AuthMode } from './EndpointsModels'
+import { AuthMode } from './models'
 import { fetcher } from './fetcher'
 
 // Auth actions
